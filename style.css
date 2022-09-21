@@ -1,0 +1,227 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(116, 124, 124);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-satu{
+    max-width: 1300px;
+    height: 600px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    display: flex;
+    background-color: cornsilk;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.halaman-utama {
+    flex: 3;
+    order: 2;
+    background-color: rgb(236, 234, 229);
+    padding: 20px;
+    margin: 0px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.halaman-utama .header {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.halaman-utama .informasi-detail {
+    overflow: auto;
+    scroll-behavior: smooth;
+    padding-right: 10px;
+    width: 750px;
+    margin-right: -15px;
+}
+
+.halaman-utama p {
+    line-height: 25px;
+}
+
+.halaman-utama .workexp {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(248, 148, 240);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.halaman-utama .Riwayat-pendidikan {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(98, 130, 233);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.halaman-utama .pengalaman-organisasi {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(98, 233, 166);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.halaman-utama .karya {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(231, 123, 132);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.workexperience h2, .Riwayat-pendidikan h2, .pengalaman-organisasi h2, .karya h2 {
+    border-bottom: 5px double rgb(44, 44, 44);
+}
+
+.durasi {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid rgb(114, 116, 116);
+    margin-bottom: -15px;
+}
+
+.workexperience .label {
+    font-weight: bold;
+}
+
+.pengalaman-organisasi {
+    
+}
+
+/* SIDE BAR Styling */
+
+.sidebar-left{
+    flex: 1;
+    order: 1;
+    padding: 10px 10px;
+    background-color: rgb(58, 55, 55);
+}
+
+.sidebar-left ul {
+    padding-inline-start: 15px;
+}
+
+.sidebar-left h2{
+    text-align: left;
+    padding: 0px 15px;
+    color: white;
+}
+
+.sidebar-left li {
+    list-style-type: none;
+    padding: 10px 5px;
+    font-weight: bold;
+    border-bottom: 1px dotted grey;
+    transition: 0.5s;
+}
+
+
+.sidebar-left li:hover {
+    background-color: rgb(5, 177, 42);
+    border-radius: 3px;
+    padding-left: 20px;
+}
+
+.sidebar-left li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Side bar right */
+
+.sidebar-right{
+    flex: 1;
+    order: 3;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(185, 181, 181);
+}
+
+.sidebar-right h2 {
+    text-align: center;
+}
+
+.sidebar-right p {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(39, 39, 39);
+}
+
+.sidebar-right .image {
+    height: 170px;
+    width: 170px;
+    border-radius: 150px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.sidebar-right img {
+    height: 250px;
+}
+
+
+.sidebar-right .skill {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+.sidebar-right .skill .icon img {
+    flex: 1;
+    width: 35px;
+    height: auto;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.skill .deskripsi {
+    flex: 3;
+    margin: 10px 10px;
+    font-weight: 700;
+}
+
+
+@media(max-width:600px){
+
+}
+
+
+/* Container dua */
+.container-dua{
+    width: 800px;
+    margin: 30px auto;
+    display: flex;
+}
+
+.card{
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    border: 1px solid rgb(131, 129, 129);
+    background-color: rgb(231, 222, 240);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card .button{
+    text-align: center;
+}
+
+.card .header{
+    text-align: center;
+    background-color: rgb(61, 56, 56);
+    overflow: hidden;
+}
+
+.card .content{
+    text-align: left;
+    padding: 5px;
+}
